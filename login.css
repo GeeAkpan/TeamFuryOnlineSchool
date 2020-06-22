@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+/*Navigation bar styling*/
+.navbar{
+    background:  #FFFFFF;
+}
+.navbar-toggler img{
+	width: 30px;
+}
+.nav-item{
+	margin: 10px;
+}
+.nav-link{
+	padding: 5px;
+	border: 4px solid transparent;
+	transition: 0.3s;
+	font-weight: bold;
+}
+.active{
+	color: #e62fe6!important;
+}
+
+.nav-link:hover {
+	color: #e62fe6!important;
+  	transition: 0.3s;
+}
+.login{
+	background-color: transparent !important;
+	color: #333333 !important;
+	padding: 5px;
+	width: 100px;
+	border-radius: 20px!important;
+}
+.register{
+	background-color: #e62fe6 !important;
+	color: #ffffff !important;
+	margin-left: 10px;
+	padding: 5px;
+	width: 100px;
+	border-radius: 20px!important;
+}
+.login:hover, .register:hover{
+	color: #ffffff !important;
+	background: #333 !important;
+}
+.login-container{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(/images/ZslFOaqzERU.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-form{
+  margin: auto;
+  width: 370px;
+  padding: 15px;
+  max-width: 100%;
+}
+.login-form .form-control{
+  font-size: 15px;
+  min-height: 48px;
+  font-weight: 500;
+}
+.login-form a{
+  text-decoration: none;
+  color:#e62fe6;
+}
+.login-form a:hover{
+  color:#723dbe;
+}
+.forgot-link{
+  font-size: 13px;
+}
+.form-control{
+    background: transparent !important;
+    -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+.form-control:focus{
+  border-color:#723dbe;
+  box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
+}
+.btn-custom{
+  background: #e62fe6;
+  border-color:#e62fe6;
+  color:#fff;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  min-height: 40px;
+  width: 212px;
+}
+.btn-custom:focus,
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:active:focus{
+  background: #54229d;
+  border-color: #54229d;
+  color:#fff;
+}
+.btn-custom:focus{
+  box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
+}
+
+
+/* Sign Up CSS */
+.signup-form{
+    margin: auto;
+    width: 370px;
+    padding: 15px;
+    padding-top: 15% !important;
+    max-width: 100%;
+}
+.signup-form img{
+    padding-top: 13px !important;
+}
+.signup-form .form-control{
+    font-size: 15px;
+    min-height: 48px;
+    font-weight: 500;
+}
+.signup-form a{
+    text-decoration: none;
+    color:#e62fe6;
+}
+.signup-form a:hover{
+    color:#723dbe;
+}
+#signup-mobile{
+    background: url(/images/GX8KBbVmC6c.png) rgba(0, 0, 0, 0.44);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    color: rgba(255, 255, 255, 0.5);
+    height: 812px;
+}
+#signin-mobile{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(/images/ZslFOaqzERU.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.5);
+    height: 812px;
+}
+#signin-mobile .input-group-text{
+    background: transparent !important;
+    border-radius: 0px;
+    border-right: transparent !important;
+    border: 2px solid rgba(255, 255, 255, 0.74);
+    color: rgba(255, 255, 255, 0.5);
+}
+#signin-mobile .form-control{
+    border-left: transparent !important;
+    border: 2px solid rgba(255, 255, 255, 0.74);
+    color: rgba(255, 255, 255, 0.5);
+}
+#signup-mobile .btn-custom{
+    background: white;
+    border-color:white;
+    color:#e62fe6;
+}
+#signup-mobile p{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+#signup-mobile .btn-custom:hover{
+    background: #e62fe6;
+    color: #723dbe;
+    border: #e62fe6;
+}
+#signup-mobile .input-group-text{
+    background: transparent !important;
+    border-radius: 0px;
+    border-right: transparent !important;
+    border: 2px solid rgba(255, 255, 255, 0.74);
+    color: rgba(255, 255, 255, 0.5);
+}
+#signup-mobile .form-control{
+    border-left: transparent !important;
+    border: 2px solid rgba(255, 255, 255, 0.74);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 600px){
+    header{
+        display: none !important;
+    }
+    #sign-in-main{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 768px){
+    #sign-up{
+        display: none !important;
+    }
+    #sign-in-main{
+        display: none !important;
+    }
+}
